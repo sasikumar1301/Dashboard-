@@ -1,0 +1,143 @@
+*{
+  box-sizing:border-box;
+}
+.main-container{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    background-color:#ffffff;
+}
+.linechart{
+  height: 20%;
+}
+.main-cont{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 60px ;
+
+}
+  .search-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  input[type="text"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  /* main-cont */
+ 
+  /* header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start ;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-button,
+  .reminder,
+  .profile-pic {
+    margin-left: 10px;
+  }
+  
+  .header button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  /* progress */
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 23%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+  }
+  .b1{
+    background-color:lightgoldenrodyellow;
+
+  }
+  .b2{
+    background-color: cornflowerblue;
+  } 
+  .b3{
+    background-color: aquamarine;
+
+  } 
+  .b4{
+    background-color: rgba(157, 189, 195, 0.795);
+
+  }
+  .box-data-value{
+    font-weight: bold;
+  }
+  .box-header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  
+  .box-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .box-icon {
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+  }  
+  
+  /* linechart */
+  .bottom-container{
+    display: flex;
+    flex-direction: row;
+  }
+  
