@@ -8,13 +8,12 @@ import App from './App';
 
 // Initialize Firebase with your project credentials
 const firebaseConfig = {
-  apiKey: "AIzaSyB2LiKxIEMBeRNuYgMAktVkk0ubjWOcEj4",
-  authDomain: "newauth-5b8d2.firebaseapp.com",
-  databaseURL: "https://newauth-5b8d2-default-rtdb.firebaseio.com",
-  projectId: "newauth-5b8d2",
-  storageBucket: "newauth-5b8d2.appspot.com",
-  messagingSenderId: "206185928024",
-  appId: "1:206185928024:web:63f3657cac376b0b70812d"
+  apiKey: "AIzaSyCMNQYKDNKOAv_6ihgG3TJ1Vfa_9q0IeN0",
+  authDomain: "openinassignment.firebaseapp.com",
+  projectId: "openinassignment",
+  storageBucket: "openinassignment.appspot.com",
+  messagingSenderId: "560855519688",
+  appId: "1:560855519688:web:0dde1f5af6370d10a6b0fd"
 };
 
 firebase.initializeApp(firebaseConfig);
