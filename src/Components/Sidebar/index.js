@@ -11,31 +11,31 @@ function Sidebar (){
         <li>
           <a href="/">
             <FaHome />
-            <span>Dashboard</span>
+            <span className="spanelement" >Dashboard</span>
           </a>
         </li>
         <li>
           <a href="/transactions">
             <FaMoneyBill />
-            <span>Transactions</span>
+            <span className="spanelement">Transactions</span>
           </a>
         </li>
         <li>
           <a href="/schedules">
             <FaCalendarAlt />
-            <span>Schedules</span>
+            <span className="spanelement">Schedules</span>
           </a>
         </li>
         <li>
           <a href="/users">
             <FaUsers />
-            <span>Users</span>
+            <span className="spanelement">Users</span>
           </a>
         </li>
         <li>
           <a href="/settings">
             <FaCog />
-            <span>Settings</span>
+            <span className="spanelement">Settings</span>
           </a>
         </li>
       </ul>
@@ -43,11 +43,11 @@ function Sidebar (){
       <div className="bottom-options">
         <a href="/help">
           <FaQuestionCircle />
-          <span>Help</span>
+          <span className="spanelement">Help</span>
         </a>
         <a href="/contact">
           <FaPhone />
-          <span>Contact Us</span>
+          <span className="spanelement">Contact Us</span>
         </a>
       </div>
     </div>

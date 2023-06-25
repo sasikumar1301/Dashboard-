@@ -7,7 +7,7 @@ function Schedule (){
         <div className="schedule-container">
             
             
-            <h1 className="heading">Today's schdule</h1>
+            <h1 className="heading">Today's schedule</h1>
             <div className="container">
                 <div className="container1">
                     <h1>Meeting with suppliers from Kuta Bali</h1>

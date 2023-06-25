@@ -1,14 +1,28 @@
-
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import firebase from 'firebase/app';
+import 'firebase/auth';
 import Sidebar from '../Sidebar';
 import LineChartComponent from '../LineChartComponent';
 import PieChartComponent from '../PieChartComponent';
 import Schedule from '../Schedule';
-import {   FaUsers,  FaSearch, FaBell, FaUser,
+import {   FaUsers,  FaSearch, FaBell, FaUser, FaSignOutAlt,
     FaDollarSign, FaExchangeAlt, FaThumbsUp } from 'react-icons/fa';
 import './index.css';
 
 function Dashboard() {
+
+  const history = useHistory();
+
+  const handleLogout = async (e) => {
+    e.preventDefault();
+    try {
+      await firebase.auth().signOut();
+      history.push('/'); // Redirect to login page after successful logout
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className='main-container'>
     <div>
@@ -36,6 +50,11 @@ function Dashboard() {
         <div className="profile-pic">
           <button>
             <FaUser />
+          </button>
+        </div>
+        <div className="profile-pic">
+          <button onClick={handleLogout}>
+            <FaSignOutAlt />
           </button>
         </div>
       </div>

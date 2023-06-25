@@ -54,3 +54,8 @@
     display: flex;
     padding-bottom: -10px;
   }
+  @media screen and (max-width: 768px) {
+    .pie-chart{
+      width: 100%;
+    }
+  }

@@ -1,0 +1,49 @@
+.signup-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .signup-page input {
+    margin-bottom: 10px;
+    height: 30px;
+  }
+  .signup-page p{
+    color: red;
+  }
+  .signUpbtn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    background-color: #007bff;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  /* Button Hover Effect */
+  .signUpbtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Button Active Effect */
+  .signUpbtn:active {
+    background-color: #003d80;
+  }
+  
+  /* Button Disabled State */
+  .signUpbtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  .backbtn{
+    background-color: transparent;
+    color: blue;
+  }

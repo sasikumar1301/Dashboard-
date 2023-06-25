@@ -1,19 +1,22 @@
-import {BrowserRouter, Route, Switch } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import LogInPage from './Components/LogInPage';
+import SignupPage from './SignupPage';
 import Dashboard from './Components/Dashboard';
-import './App.css';
+import NotFound from './Components/NotFound';
 
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-    <Switch>
-    <Route exact path="/login" component={LogInPage} />
-    
-    <Route exact path="/" component={Dashboard} />
-    </Switch>
-
-    </BrowserRouter>
-  )
-}
+    <Router>
+      <Switch>
+        <Route exact path="/" component={LogInPage} />
+        <Route path="/signup" component={SignupPage} />
+        <Route path="/dashboard" component={Dashboard}/>
+        <Route path="/not-found" component={NotFound} />
+        <Redirect to="/not-found" />
+      </Switch>
+    </Router>
+  );
+};
 
 export default App;
