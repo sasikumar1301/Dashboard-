@@ -9,31 +9,31 @@ function Sidebar (){
         <div className='top-buttons'>
       <ul>
         <li>
-          <a href="/">
+          <a href="/home">
             <FaHome />
             <span className="spanelement" >Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="/transactions">
+          <a href="/home">
             <FaMoneyBill />
             <span className="spanelement">Transactions</span>
           </a>
         </li>
         <li>
-          <a href="/schedules">
+          <a href="/home">
             <FaCalendarAlt />
             <span className="spanelement">Schedules</span>
           </a>
         </li>
         <li>
-          <a href="/users">
+          <a href="/home">
             <FaUsers />
             <span className="spanelement">Users</span>
           </a>
         </li>
         <li>
-          <a href="/settings">
+          <a href="/home">
             <FaCog />
             <span className="spanelement">Settings</span>
           </a>
@@ -41,11 +41,11 @@ function Sidebar (){
       </ul>
       </div>
       <div className="bottom-options">
-        <a href="/help">
+        <a href="/homehelp">
           <FaQuestionCircle />
           <span className="spanelement">Help</span>
         </a>
-        <a href="/contact">
+        <a href="/homecontact">
           <FaPhone />
           <span className="spanelement">Contact Us</span>
         </a>

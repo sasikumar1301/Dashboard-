@@ -1,7 +1,9 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import firebase from 'firebase/app';
-import 'firebase/auth';
+import React, {useEffect} from 'react';
+import { getAuth, signOut } from 'firebase/auth'; // Import Firebase auth methods
+import { useNavigate } from 'react-router-dom';
+
+
+
 import Sidebar from '../Sidebar';
 import LineChartComponent from '../LineChartComponent';
 import PieChartComponent from '../PieChartComponent';
@@ -12,17 +14,28 @@ import './index.css';
 
 function Dashboard() {
 
-  const history = useHistory();
+  const navigate = useNavigate();
+  const auth = getAuth(); // Get the authentication instance
 
-  const handleLogout = async (e) => {
-    e.preventDefault();
+  const handleLogout = async () => {
     try {
-      await firebase.auth().signOut();
-      history.push('/'); // Redirect to login page after successful logout
+      await signOut(auth); // Sign the user out using Firebase auth
+      navigate('/'); // Redirect to login page on successful logout
     } catch (error) {
-      console.log(error);
+      console.error('Error logging out:', error); // Handle errors (optional)
     }
   };
+
+  // Optional: Implement a check for user authentication on component mount
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (!user) {
+        navigate('/login'); // Redirect to login if not authenticated
+      }
+    });
+
+    return unsubscribe; // Cleanup function to prevent memory leaks
+  }, [auth, navigate]); // Dependencies for useEffec
   return (
     <div className='main-container'>
     <div>
