@@ -41,11 +41,11 @@ function Sidebar (){
       </ul>
       </div>
       <div className="bottom-options">
-        <a href="/homehelp">
+        <a href="/home">
           <FaQuestionCircle />
           <span className="spanelement">Help</span>
         </a>
-        <a href="/homecontact">
+        <a href="/home">
           <FaPhone />
           <span className="spanelement">Contact Us</span>
         </a>
